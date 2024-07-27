@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio Design 2</title>
+</head>
+<link rel="stylesheet" type="text/css" href="portfolio-design.css">
+<style type="text/css">
+	body {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main {
+	width: 300px;
+	height: 400px;
+	background-color: blue;
+	border-radius: 20px;
+	position: relative;
+	top: 100px;
+	box-shadow: 1px 1px 10px black;
+}
+
+.upper-div {
+	width: 300px;
+	height: 32%;
+	background-color: royalblue;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.lover-div {
+	width: 300px;
+	height: 68%;
+	background-color: #fff;
+	position: absolute;
+	text-align: center;
+	border-radius: 0px 0px 20px 20px;
+}
+
+#name {
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+	top: 25px;
+}
+
+#profession {
+	position: relative;
+	top: 20px;
+}
+
+.pages {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 18px;
+}
+
+.social-icon {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	top: 25px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	position: relative;
+	top: 50px;
+}
+
+.btn {
+	width: 100px;
+	height: 30px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: royalblue;
+	border-radius: 20px;
+}
+
+.likes {
+	position: relative;
+	top: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.line {
+	color: lightgray;
+}
+
+.profile-picture {
+	width: 90px;
+	height: 90px;
+	background-color: white;
+	border-radius: 50%;
+	background-image: url("https://media-del2-2.cdn.whatsapp.net/v/t61.24694-24/445255533_1525013224794025_6390726834711184217_n.jpg?ccb=11-4&oh=01_Q5AaIFoRxxzcbz4MJDBsFMBxn0GhljR0DM2KXDLlDDTSkJPQ&oe=66864413&_nc_sid=e6ed6c&_nc_cat=110");
+	background-size: cover;
+	position: absolute;
+	left: 100px;
+	top: 50px;
+	border: 2px double white;
+	outline: 2px solid royalblue;
+} 
+
+</style>
+<body>
+	<div class="main">
+		<div class="upper-div">
+				
+		</div>
+
+		<div class="lover-div">
+			<div id="name">R Gamerz</div>
+			<p id="profession">YouTuber & Coder</p>
+			<div class="pages">
+				<div class="facebook social-icon" style="background-color: steelblue;">
+					<i class="fa-brands fa-facebook"></i>
+				</div>
+				<div class="twitter social-icon" style="background-color: deepskyblue;">
+					<i class="fa-brands fa-twitter"></i>
+				</div>
+				<div class="insta social-icon" style="background-color: deeppink;">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+				<div class="youtube social-icon" style="background-color: red;">
+					<i class="fa-brands fa-youtube"></i>
+				</div>
+			</div>
+			<div class="buttons">
+				<div id="first-btn" class="btn">Subscribe</div>
+				<div id="second-btn" class="btn">Message</div>
+			</div>
+			<div class="likes">
+				<div class="heart-likes">
+					<i class="fa-regular fa-heart" style="color: #0d0f12;"></i>
+					60k
+				</div>
+				<div class="line">
+					|
+				</div>
+				<div class="comment-likes">
+					<i class="fa-regular fa-comment" style="color: #090a0b;"></i>
+					20k
+				</div>
+				<div class="line">
+					|
+				</div>
+				<div class="share-likes">
+					<i class="fa-solid fa-share" style="color: #07090e;"></i>
+					10k
+				</div>
+			</div>
+		</div>
+
+		<div class="profile-picture">
+		
+		</div>
+	</div>
+	<script src="https://kit.fontawesome.com/c23468a0b3.js" crossorigin="anonymous"></script>
+</body>
+</html>

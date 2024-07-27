@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Raj</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+
+  <style type="text/css">
+
+    .r{
+      border-radius: 40px;
+      height: 250px;
+    }
+    .meri{
+      width: 1100px;
+      position: relative;
+      left: 104px;
+    }
+    .card{
+      border: none;
+    }
+    #f{
+      display: flex;
+    }
+    .co{
+      background: #e1e4e8;
+      padding: 32px;
+    }
+    .cou{
+      width: 260px;
+      border-radius: 10px;
+      background: #fafafa;
+      padding: 10px;      
+    }
+    #active{
+      background: none;
+      border: 1px solid yellow;
+      color: white;
+    }
+    #marquee{
+      display: flex;
+    }
+    .rajj{
+      transition: .5s ease all;
+    }
+
+  </style>
+
+
+
+</head>
+<body>
+  
+  <!-- navbar -->
+	<nav class="navbar navbar-expand-lg  p-3 mb-3" style="background: white;">
+  <div class="container-fluid">
+    <a class="navbar-brand ms-5" href="raj.html">
+      <img class="ms-5" src="https://marketplace.canva.com/EAFYecj_1Sc/1/0/1600w/canva-cream-and-black-simple-elegant-catering-food-logo-2LPev1tJbrg.jpg"  width="40">
+    </a><h3><a class="navbar-brand" href="raj.html">Foget</a></h3>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav nav-tabs ms-5" id="nav">
+        <li class="nav-item me-5">
+          <a class="nav-link " aria-current="page" href="foget-coprate.html">
+            <i class="fa-solid fa-tv"></i>
+          Foget Corporate</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Search.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mx-5" href="Offer.html">
+              <i class="fas fa-tags"></i>
+              <i class="fas fa-percentage"></i>
+            Offer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Help.html">
+            <i class="fas fa-question-circle "></i>
+            Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ms-5" href="Cart.html">
+            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            Cart</a>
+        </li>
+        <form class="d-flex ms-5">
+          <a class="btn btn-outline-primary" id="login" href="login-1.html" type="submit">Login
+            <i class="fa-regular fa-user"></i>
+          </a>
+          <a class="btn btn-outline-success ms-5" id="login" href="signup.html" type="submit">
+          Sign Up
+          <i class="fa-regular fa-user"></i>
+        </a>
+        </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Hero Section -->
+
+<div class="container">
+  <h3 style="font-family: times new roman;"><b>What's on your Mind?</b></h3>
+   <marquee direction="right" Scrollamount="30" behavior="alternet"  onmouseover="this.stop();" onmouseout="this.start();" id="marquee">
+  <div class="row" id="u">
+    <div class="col-sm-4 col-md-2">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/North_Indian_4.png" width="140" class="rajj">
+    </div>
+    <div class="col-sm-4 col-md-2">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1675667625/PC_Creative%20refresh/Biryani_2.png" width="140" class="rajj">
+    </div>
+    <div class="col-sm-4 col-md-2">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029856/PC_Creative%20refresh/3D_bau/banners_new/Pizza.png" width="140" class="rajj">
+    </div>
+    <div class="col-sm-4 col-md-2">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029845/PC_Creative%20refresh/3D_bau/banners_new/Burger.png" width="140" class="rajj">
+    </div>
+    <div class="col-sm-4 col-md-2">
+     <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029850/PC_Creative%20refresh/3D_bau/banners_new/Dosa.png" width="140" class="rajj"> 
+    </div>
+    <div class="col-sm-4 col-md-2">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_288,h_360/v1674029848/PC_Creative%20refresh/3D_bau/banners_new/Chinese.png" width="140" class="rajj">
+    </div>
+  </div>
+  </marquee>
+
+  <!-- crousel -->
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/js7g8baosslodwoq7nk5" class="d-block w-100" alt="..." height="750" >
+    </div>
+    <div class="carousel-item ">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/5116a385bac0548e06c33c08350fbf11" class="d-block w-100" alt="..." height="750">
+    </div>
+    <div class="carousel-item ">
+      <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/d0450ce1a6ba19ea60cd724471ed54a8" class="d-block w-100" alt="..." height="750">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!-- Line -->
+
+<br><br>
+<hr>
+<br><br>
+
+<!-- Card -->
+
+<h3 class="py-3">Restaurants with online food delivery in Delhi</h3>
+<div class="row">
+<div class=" col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=" col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e0839ff574213e6f35b3899ebf1fc597" class=" card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=" col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/zsq4dsnxgtd5aigqo4bo" class="card-img-top">
+   <div class="card-body ">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=" col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/5ade7aab-4263-4ea8-b04c-299e523d1ad8_129211.jpg" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/aq9ujdegkrwzbtlhfurg" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/a2yc3h5vm3u3yysvqzyk" class="card-img-top ">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/f47a42ca1e24726e55500b00f22daa81" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ckdliyszy6niqiggbgun" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ <div class="row">
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/d1892373c42789d64b43ae5b933bf418" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/743ffc0123317228d2b9b3698c034361" class="card-img-top ">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/bba088ec8a7e007024efc7d9cdabd37c" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ <div class="row">
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/aq9ujdegkrwzbtlhfurg" class="card-img-top ">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/c583da4b69d264ffe705e5918fad0e98" class="card-img-top ">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/zsq4dsnxgtd5aigqo4bo" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3 rajj">
+  <div class="card">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/c583da4b69d264ffe705e5918fad0e98" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ <div class="row">
+<div class="col-md-3">
+  <div class="card rajj">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/6116a2736e177c4a872d11a9d077584a" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card rajj">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/zaje9twchacwlhdbh6hk" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card rajj">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/f3cced21e2be658118713e4008f3b7f3" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-md-3">
+  <div class="card rajj">
+    <img class="r" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/6/11/5ade7aab-4263-4ea8-b04c-299e523d1ad8_129211.jpg" class="card-img-top">
+   <div class="card-body">
+      <div class="card-title">
+        <h5>Pizza hut<br>
+        Rating 4.2 * 30-45 mins</h5>
+      </div>
+      <div class="card-text">
+       <p>Pizzas <br>Kriti nagar</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ 
+
+ <!-- Counter -->
+ <div class="container co mt-4" >
+   <div class="row" style="gap: 10px;">
+     <div class="col-md-3 cou  " >
+      <i class="fa-solid fa-heart" style="font-size: 40px; color: red;"></i>
+      <div id="counter">
+        <h4><span id="count">0</span></h4>
+      </div>
+      <h6>Satisfied Clients by Results</h6>
+     </div>
+     <div class="col-md-3 cou">
+       <i class="fa-regular fa-clock" style="font-size: 40px; color: aquamarine;"></i>
+      <div id="counter">
+        <h4><span id="count1">0</span></h4>
+      </div>
+      <h6>Hours of Cleaning Work</h6>
+     </div>
+     <div class="col-md-3 cou ">
+       <i class="fa-regular fa-gem" style="font-size: 40px; color: deepskyblue;"></i>
+      <div id="counter">
+        <h4><span id="count2">0</span></h4>
+      </div>
+      <h6>Perfectly Cleaned Premises</h6>
+     </div>
+     <div class="col-md-3 cou ">
+       <i class="fa-regular fa-face-smile" style="font-size: 40px; color: crimson;"></i>
+      <div id="counter">
+        <h4><span id="count3">0</span></h4>
+      </div>
+      <h6>Client Satisfaction Rate</h6>
+     </div>
+   </div>
+ </div>
+
+
+
+
+
+
+<br>
+<!-- CArd k baad -->
+
+<h3 class="py-3">Best Places to Eat Across Cities</h3>
+<div class="row mb-3">
+  <div class=" col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Bangalore</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Delhi</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in UP</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in MP</button>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Rajesthan</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Jaipur</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Nepal</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Karnatka</button>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Delhihit</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Bihar</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Gujrat</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Bangalore</button>
+  </div>
+</div>
+<div class="row mb-3">
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Chitisgadh</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Mumbai</button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Jammu </button>
+  </div>
+  <div class="col-md-3 ">
+    <button class="btn btn-outline-dark">Best Restaurants in Bangalore</button>
+  </div>
+</div>
+
+</div>
+  <div class="container-fluid bg-secondary" >
+    <div class="row justify-content-center">
+      <div class="col-8">
+       <h3>For better experience, download the Swiggy app now</h3>
+     </div>
+      <div class="col-4">
+      <a href="https://play.google.com/store/apps/details?id=in.swiggy.android&pcampaignid=web_share"><button class="btn btn-lg btn-outline-primary">Play Store</button></a>
+      <a href="https://apps.apple.com/in/app/swiggy-food-grocery-dineout/id989540920"><button class="btn btn-lg btn-outline-success">App Store</button></a>
+      </div>
+      </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid bg-dark text-light">
+    <div class="row">
+      <div class="col-3 ">
+        <div id="f"><a href="raj.html"><img src="https://marketplace.canva.com/EAFYecj_1Sc/1/0/1600w/canva-cream-and-black-simple-elegant-catering-food-logo-2LPev1tJbrg.jpg" width="40"></a><h3>Foget</h3></div>
+        <p>© 2024 Bundl Technologies Pvt. Ltd</p>
+      </div>
+      <div class="col-3">
+        <h3>Company</h3>
+        <p>About</p>
+        <p>Careers</p>
+        <p>Team</p>
+        <p>Swiggy One</p>
+        <p>Swiggy Instamart</p>
+        <p>Swiggy Genie</p>
+      </div>
+      <div class="col-3">
+        <h3>Contact us</h3>
+       <p> Help & Support</p>
+       <p>Partner with us</p>
+       <p>Ride with us</p>
+       <h4 style="position: relative; top: 40px;">Legal</h4>
+       <p style="position: relative; top: 40px;">Terms & Conditions</p>
+       <p style="position: relative; top: 40px;">Cookie Policy</p>
+       <p style="position: relative; top: 40px;">Privacy Policy</p>
+       <p style="position: relative; top: 40px;"> .</p>
+      </div>
+      <div class="col-3">
+        <h3>Deliver to</h3>
+        <p>Gurgaon</p>
+        <p>Bangalore</p>
+        <p>Hyderabad</p>
+        <p>Delhi</p>
+        <p>Mumbai</p>
+        <p>Pune</p>
+        <Button class="btn btn-outline-dark">508+ Cities</Button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col" style="background: black; color: white;">
+        <center><h3>© 1996-2024 Raj Ambani. All Rights Reserved.</h3></center>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(document).ready(function() {
+  var count = 0;
+  function incrementCounter() {
+    if (count < 500) {
+      count++;
+      $('#count').text(count);
+    }
+  }
+  var intervalId = setInterval(incrementCounter, 3); 
+  if (count === 500) {
+    clearInterval(intervalId);
+    console.log('Counter reached 500. Stopped.');
+  }
+});
+
+  $(document).ready(function() {
+  var count1 = 0;
+  function incrementCounter() {
+    if (count1 < 1000) {
+      count1++;
+      $('#count1').text(count1);
+    }
+  }
+  var intervalId1 = setInterval(incrementCounter, 5); 
+  if (count1 === 1000) {
+    clearInterval(intervalId1);
+    console.log('Counter reached 1000. Stopped.');
+  }
+});
+  $(document).ready(function() {
+  var count2 = 0;
+  function incrementCounter() {
+    if (count2 < 400) {
+      count2++;
+      $('#count2').text(count2);
+    }
+  }
+  var intervalId2 = setInterval(incrementCounter, 4); 
+  if (count2 === 400) {
+    clearInterval(intervalId2);
+    console.log('Counter reached 400. Stopped.');
+  }
+});
+
+  $(document).ready(function() {
+  var count3 = 0;
+  function incrementCounter() {
+    if (count3 < 555) {
+      count3++;
+      $('#count3').text(count3);
+    }
+  }
+  var intervalId3 = setInterval(incrementCounter, 6); 
+  if (count3 === 555) {
+    clearInterval(intervalId3);
+    console.log('Counter reached 555. Stopped.');
+  }
+});
+ $(document).ready(function(){
+   $(".rajj").click(function(){
+     window.location.href="order.html";
+  })
+ })
+
+  $(document).ready(function(){
+    $('.rajj').mouseenter(function(){
+      $(this).css("position","relative")
+      $(this).css("top","20px")
+      $(this).css("bottom","20px")
+    })
+    $('.rajj').mouseout(function(){
+      $(this).css("position","relative")
+      $(this).css("top","0px")
+      $(this).css("bottom","0px")
+    })
+  })
+</script>
+
+</body>
+</html>
